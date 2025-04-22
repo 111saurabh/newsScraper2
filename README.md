@@ -12,27 +12,6 @@ A complete MERN stack news aggregator application that scrapes news from multipl
 - **Responsive Design**: Works on desktop and mobile devices
 - **MongoDB Integration**: Complete database setup with Docker
 
-## Project Structure
-
-```
-news-aggregator/
-├── backend/               # Node.js/Express backend
-│   ├── scrapers/          # Web scrapers for news sites
-│   ├── models/            # Mongoose schemas
-│   ├── routes/            # API routes
-│   └── server.js          # Express server setup
-├── frontend/              # React frontend
-│   ├── public/            # Static files
-│   ├── src/               # React components and logic
-│   └── package.json       # Frontend dependencies
-├── database/              # MongoDB setup
-│   ├── mongo-init.js      # Database initialization script
-│   └── docker-compose.yml # Docker configuration for MongoDB
-├── scripts/               # Utility scripts
-│   ├── install.sh         # Dependency installation script
-│   └── run.sh             # Application startup script
-└── README.md              # Project documentation
-```
 
 ## Prerequisites
 
@@ -78,21 +57,6 @@ news-aggregator/
    - Backend API: http://localhost:5000
    - MongoDB: localhost:27017
 
-## Default Users
-
-The application comes with two pre-configured users:
-
-1. Admin User:
-
-   - Email: admin@example.com
-   - Password: admin123
-   - Role: admin
-
-2. Regular User:
-   - Email: user@example.com
-   - Password: user123
-   - Role: user
-
 ## API Endpoints
 
 ### Authentication
@@ -119,15 +83,6 @@ The application comes with two pre-configured users:
 - `GET /api/notes/export/pdf` - Export notes as PDF
 
 ## Environment Variables
-
-### Backend (.env)
-
-```
-PORT=5000
-MONGODB_URI=mongodb://news-app-user:news-app-password@localhost:27017/news-scraper
-JWT_SECRET=your_jwt_secret_change_this_in_production
-NODE_ENV=development
-```
 
 ### Frontend (.env)
 

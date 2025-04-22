@@ -1,3 +1,5 @@
 scripts
 github
 node_modules
+.env
+scripts
